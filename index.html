@@ -11,8 +11,19 @@
     </p>
     <script>
       var userName = prompt("Hello, what is your name, small vulnerable child?")
-      alert("Hello " + userName + ", it is a distinct pleasure to EAT you.")
+      // alert("Hello " + userName + ", it is a distinct pleasure to EAT you.")
+
       console.log("This is the username variable: " + userName);
+
+      if (userName === "Scott") {
+        console.log("Scott is correct");
+      } else if (userName === "Molly") {
+        console.log("Molly is correct");
+      } else {
+        console.log("You got it wrong, you bum.");
+      }
+
+
     </script>
   </body>
 </html>
