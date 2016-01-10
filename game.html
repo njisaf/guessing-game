@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Guessing Game</title>
+  </head>
+  <body>
+    <center>
+      <h1>Welcome to the guessing game!</h1>
+      <p>Click the button below to begin the Guessing Game.</p>
+      <p><button onclick = "myFunction()">Click here to begin!</button></p>
+      <script>
+      function myFunction() {
+
+      var correctAnswer = 0
+
+// // Question One //
+
+      var questionOne = prompt("What is my favorite color? Can you guess it?").toUpperCase();
+      if (questionOne === "BLUE") {
+        correctAnswer++;
+        alert("That's right! You have correctly guessed " + correctAnswer + " out of 4.");
+      } else {
+        alert("Uh oh, that's wrong. You have correctly guessed " + correctAnswer + " out of 4.");
+      }
+
+// // Question Two //
+//
+//       var questionTwo = prompt("I cannot concentrate. I am thinking of a large, dangerous African mammal for no reason at all. What is it?");
+//       if (questionTwo === "HIPPO" || questionTwo === "HIPPOPOTAMUS") {
+//         correctAnswer++;
+//         alert("That's right! You have correctly guessed " + correctAnswer + " out of 4.");
+//       } else {
+//         alert("Uh oh, that's wrong. You have correctly guessed " + correctAnswer + " out of 4.");
+//       }
+//
+// // // Question Three //
+//
+//       var questionThree = prompt("Two of my favorite foods are chocolate and cream. I am thinking of a delicious pastry that uses both chocolate and cream. What is it?")
+//       if (questionThree === "ECLAIR") {
+//         correctAnswer++;
+//         alert("That's right! You have correctly guessed " + correctAnswer + " out of 4.");
+//       } else {
+//         alert("Uh oh, that's wrong. You have correctly guessed " + correctAnswer + " out of 4.");
+//       }
+//
+// // // Question Four //
+//
+//       var questionFour = parseInt(prompt("I am thinking of a number between 1 and 10. What is it? Enter a numberical value between 1 and 10."));
+//       if (questionFour === 5) {
+//         correctAnswer++;
+//         alert("That's right, I was thinking of 5! You have correctly guessed " + correctAnswer + " out of 4.");
+//       } else if (questionFour <= 4) {
+//         alert("Too bad, you guessed too low! You have correctly guessed " + correctAnswer + " out of 4.");
+//       } else if (questionFour >= 6) {
+//         alert("Too bad, you guessed too high! You have correctly guessed " + correctAnswer + " out of 4.");
+//       } else {
+//         alert("You can't follow instructions, so no points for you! You have correctly guessed " + correctAnswer + " out of 4.");
+//        }
+    }
+      </script>
+  </body>
+</html>
